@@ -1,0 +1,23 @@
+<view class="page">
+
+<view class="header">
+    <text class="title">校园选课评价系统</text>
+    <text class="sub">Course Evaluation Mini Program</text>
+</view>
+
+<image
+    class="logo"
+    src="https://img.icons8.com/color/480/university.png">
+</image>
+
+<button class="btn" bindtap="goLogin">
+  进入系统
+</button>
+
+<view class="result">
+
+    <text>{{status}}</text>
+
+</view>
+
+</view>

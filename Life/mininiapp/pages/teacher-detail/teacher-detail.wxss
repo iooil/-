@@ -1,0 +1,244 @@
+page{
+
+  background:#f5f7fb;
+  
+  }
+  
+  
+  .page{
+  
+  padding:30rpx;
+  
+  }
+  
+  
+  
+  .teacher-card{
+  
+  
+  display:flex;
+  
+  align-items:center;
+  
+  flex-direction:column;
+  
+  
+  padding:50rpx 30rpx;
+  
+  
+  background:white;
+  
+  
+  border-radius:30rpx;
+  
+  
+  }
+  
+  
+  
+  .avatar{
+  
+  
+  width:120rpx;
+  
+  height:120rpx;
+  
+  
+  display:flex;
+  
+  align-items:center;
+  
+  justify-content:center;
+  
+  
+  background:#2563eb;
+  
+  color:white;
+  
+  
+  font-size:40rpx;
+  
+  
+  border-radius:50%;
+  
+  
+  }
+  
+  
+  
+  .teacher-name{
+  
+  
+  margin-top:20rpx;
+  
+  
+  font-size:40rpx;
+  
+  
+  font-weight:bold;
+  
+  
+  }
+  
+  
+  
+  .teacher-title{
+  
+  
+  margin-top:15rpx;
+  
+  
+  color:#2563eb;
+  
+  
+  }
+  
+  
+  
+  .college{
+  
+  
+  margin-top:10rpx;
+  
+  color:#666;
+  
+  
+  }
+  
+  
+  
+  .score{
+  
+  
+  margin-top:25rpx;
+  
+  
+  font-size:42rpx;
+  
+  
+  color:#f59e0b;
+  
+  
+  }
+  
+  
+  
+  .review-count{
+  
+  
+  margin-top:10rpx;
+  
+  
+  color:#999;
+  
+  
+  }
+  
+  
+  
+  
+  .section{
+  
+  
+  margin-top:25rpx;
+  
+  
+  padding:30rpx;
+  
+  
+  background:white;
+  
+  
+  border-radius:25rpx;
+  
+  
+  }
+  
+  
+  
+  .section-title{
+  
+  
+  display:block;
+  
+  
+  margin-bottom:20rpx;
+  
+  
+  font-size:34rpx;
+  
+  
+  font-weight:bold;
+  
+  
+  }
+  
+  
+  
+  .content{
+  
+  
+  color:#555;
+  
+  
+  line-height:1.7;
+  
+  
+  }
+  
+  
+  
+  .course-item{
+  
+  
+  display:flex;
+  
+  
+  justify-content:space-between;
+  
+  
+  padding:20rpx 0;
+  
+  
+  border-bottom:1rpx solid #eee;
+  
+  
+  }
+  
+  
+  
+  .review-item{
+  
+  
+  padding:20rpx 0;
+  
+  
+  border-bottom:1rpx solid #eee;
+  
+  
+  display:flex;
+  
+  
+  flex-direction:column;
+  
+  
+  }
+  
+  
+  
+  .evaluate-btn{
+  
+  
+  margin-top:40rpx;
+  
+  
+  background:#2563eb;
+  
+  
+  color:white;
+  
+  
+  border-radius:50rpx;
+  
+  
+  }

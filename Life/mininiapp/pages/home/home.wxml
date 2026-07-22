@@ -1,0 +1,72 @@
+<view class="page">
+  <view class="user-card">
+    <view class="avatar">
+      {{user.name ? user.name.substring(0, 1) : '学'}}
+    </view>
+
+    <view class="user-info">
+      <text class="user-name">{{user.name || '学生用户'}}</text>
+      <text class="user-detail">学号：{{user.student_no}}</text>
+      <text class="user-detail">专业：{{user.major}}</text>
+    </view>
+
+    <view class="role-tag">学生</view>
+  </view>
+
+  <view class="section-title">学习数据</view>
+
+  <view class="statistics">
+    <view class="stat-card">
+      <text class="stat-number">
+        {{statistics.selected_course_count}}
+      </text>
+      <text class="stat-name">已选课程</text>
+    </view>
+
+    <view class="stat-card">
+      <text class="stat-number">
+        {{statistics.course_review_count}}
+      </text>
+      <text class="stat-name">课程评价</text>
+    </view>
+
+    <view class="stat-card">
+      <text class="stat-number">
+        {{statistics.teacher_review_count}}
+      </text>
+      <text class="stat-name">教师评价</text>
+    </view>
+  </view>
+
+  <view class="section-title">常用功能</view>
+
+  <view class="function-grid">
+    <view class="function-card" bindtap="goCourses">
+      <view class="function-icon blue">课</view>
+      <text class="function-name">课程中心</text>
+      <text class="function-desc">浏览和选择课程</text>
+    </view>
+
+    <view class="function-card" bindtap="goTeachers">
+      <view class="function-icon green">师</view>
+      <text class="function-name">教师中心</text>
+      <text class="function-desc">查看教师及评价</text>
+    </view>
+
+    <view class="function-card" bindtap="goMyCourses">
+      <view class="function-icon orange">选</view>
+      <text class="function-name">我的课程</text>
+      <text class="function-desc">管理已选课程</text>
+    </view>
+
+    <view class="function-card" bindtap="goMyReviews">
+      <view class="function-icon purple">评</view>
+      <text class="function-name">我的评价</text>
+      <text class="function-desc">管理评价记录</text>
+    </view>
+  </view>
+
+  <button class="logout-btn" bindtap="handleLogout">
+    退出登录
+  </button>
+</view>

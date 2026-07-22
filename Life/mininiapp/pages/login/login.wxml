@@ -1,0 +1,113 @@
+<view class="page">
+
+
+<!-- 学校Logo -->
+
+<image
+  class="school-logo"
+  src="/images/buct_logo.jpg"
+  mode="aspectFit"
+/>
+
+
+
+<view class="school-name">
+
+北京化工大学
+
+</view>
+
+
+<view class="system-name">
+
+校园选课评价系统
+
+</view>
+
+
+<view class="subtitle">
+
+Campus Course Evaluation System
+
+</view>
+
+
+
+<view class="form-card">
+
+
+<view class="form-item">
+
+
+<input
+
+class="input"
+
+placeholder="请输入学号"
+
+value="{{studentNo}}"
+
+bindinput="onStudentNoInput"
+
+/>
+
+
+</view>
+
+
+
+<view class="form-item">
+
+
+<input
+
+class="input"
+
+password
+
+placeholder="请输入密码"
+
+value="{{password}}"
+
+bindinput="onPasswordInput"
+
+/>
+
+
+</view>
+
+
+
+
+<button
+
+class="login-btn"
+
+bindtap="handleLogin"
+
+>
+
+登录
+
+</button>
+
+
+
+<view
+
+class="register-link"
+
+bindtap="goRegister"
+
+>
+
+没有账号？立即注册
+
+</view>
+
+
+
+</view>
+
+
+</view>

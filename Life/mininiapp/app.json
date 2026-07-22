@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/home/home",
+    "pages/courses/courses",
+    "pages/teachers/teachers",
+    "pages/teacher-detail/teacher-detail",
+    "pages/my-courses/my-courses",
+    "pages/course-review/course-review",
+    "pages/teacher-review/teacher-review",
+    "pages/my-reviews/my-reviews"
+  ],
+  "window": {
+    "navigationBarTitleText": "校园选课评价系统",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f4f7fb"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

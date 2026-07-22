@@ -1,0 +1,62 @@
+page{
+
+  background:#f5f7fb;
+  
+  }
+  
+  
+  .page{
+  
+  padding:30rpx;
+  
+  }
+  
+  
+  .title{
+  
+  font-size:36rpx;
+  
+  font-weight:bold;
+  
+  margin:30rpx 0;
+  
+  }
+  
+  
+  
+  .card{
+  
+  display:flex;
+  
+  flex-direction:column;
+  
+  padding:30rpx;
+  
+  background:white;
+  
+  border-radius:25rpx;
+  
+  margin-bottom:20rpx;
+  
+  }
+  
+  
+  
+  .name{
+  
+  font-size:32rpx;
+  
+  font-weight:bold;
+  
+  }
+  
+  
+  
+  .score{
+  
+  color:#f59e0b;
+  
+  margin:15rpx 0;
+  
+  }
+  

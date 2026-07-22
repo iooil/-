@@ -1,0 +1,206 @@
+<view class="page">
+
+
+<!-- 教师基本信息 -->
+
+<view class="teacher-card">
+
+
+<view class="avatar">
+
+{{teacher.name}}
+
+</view>
+
+
+<text class="teacher-name">
+
+{{teacher.name}}
+
+</text>
+
+
+<text class="teacher-title">
+
+{{teacher.title}}
+
+</text>
+
+
+<text class="college">
+
+{{teacher.college}}
+
+</text>
+
+
+
+<view class="score">
+
+
+⭐ {{teacher.average_score}}
+
+
+</view>
+
+
+
+<text class="review-count">
+
+{{teacher.review_count}}人评价
+
+</text>
+
+
+</view>
+
+
+
+
+
+<!-- 教师简介 -->
+
+
+<view class="section">
+
+
+<text class="section-title">
+
+教师简介
+
+</text>
+
+
+<text class="content">
+
+{{teacher.introduction}}
+
+</text>
+
+
+</view>
+
+
+
+
+
+<!-- 授课课程 -->
+
+
+<view class="section">
+
+
+<text class="section-title">
+
+授课课程
+
+</text>
+
+
+
+<view
+
+wx:for="{{courses}}"
+
+wx:key="id"
+
+class="course-item"
+
+>
+
+
+<text>
+
+{{item.course_name}}
+
+</text>
+
+
+<text>
+
+{{item.credit}}学分
+
+</text>
+
+
+</view>
+
+
+
+</view>
+
+
+
+
+
+
+<!-- 评价列表 -->
+
+
+<view class="section">
+
+
+<text class="section-title">
+
+学生评价
+
+</text>
+
+
+
+<view
+
+wx:for="{{reviews}}"
+
+wx:key="index"
+
+class="review-item"
+
+>
+
+
+<view>
+
+{{item.name}}
+
+⭐{{item.score}}
+
+</view>
+
+
+<text>
+
+{{item.content}}
+
+</text>
+
+
+</view>
+
+
+
+</view>
+
+
+
+
+
+<!--评价按钮-->
+
+<button
+
+class="evaluate-btn"
+
+bindtap="evaluateTeacher"
+
+>
+
+
+评价教师
+
+
+</button>
+
+
+
+</view>

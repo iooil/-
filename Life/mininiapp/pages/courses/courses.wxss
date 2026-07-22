@@ -1,0 +1,295 @@
+page {
+  background-color: #f4f7fb;
+}
+
+.page {
+  min-height: 100vh;
+  padding-bottom: 50rpx;
+}
+
+.search-section {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 25rpx 30rpx;
+  background-color: #ffffff;
+  box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  height: 76rpx;
+  padding: 0 25rpx;
+  background-color: #f4f6f8;
+  border-radius: 38rpx 0 0 38rpx;
+  box-sizing: border-box;
+  font-size: 27rpx;
+}
+
+.clear-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55rpx;
+  height: 76rpx;
+  color: #9ca3af;
+  background-color: #f4f6f8;
+  font-size: 40rpx;
+}
+
+.search-button {
+  width: 125rpx;
+  height: 76rpx;
+  margin: 0;
+  color: #ffffff;
+  line-height: 76rpx;
+  background-color: #2563eb;
+  border-radius: 0 38rpx 38rpx 0;
+  font-size: 27rpx;
+}
+
+.search-button::after {
+  border: none;
+}
+
+.filter-row {
+  display: flex;
+  gap: 20rpx;
+  margin-top: 22rpx;
+}
+
+.filter-picker {
+  flex: 1;
+}
+
+.filter-content {
+  padding: 20rpx;
+  color: #4b5563;
+  text-align: center;
+  background-color: #f4f6f8;
+  border-radius: 16rpx;
+  font-size: 25rpx;
+}
+
+.arrow {
+  margin-left: 12rpx;
+  color: #9ca3af;
+  font-size: 18rpx;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 25rpx 35rpx 10rpx;
+  color: #4b5563;
+  font-size: 25rpx;
+}
+
+.refresh-tip {
+  color: #9ca3af;
+}
+
+.loading,
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150rpx;
+  color: #9ca3af;
+  flex-direction: column;
+}
+
+.empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110rpx;
+  height: 110rpx;
+  color: #ffffff;
+  background-color: #cbd5e1;
+  border-radius: 28rpx;
+  font-size: 44rpx;
+}
+
+.empty-title {
+  margin-top: 30rpx;
+  color: #4b5563;
+  font-size: 30rpx;
+}
+
+.empty-desc {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+}
+
+.course-list {
+  padding: 20rpx 30rpx;
+}
+
+.course-card {
+  margin-bottom: 28rpx;
+  padding: 32rpx;
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  box-shadow: 0 10rpx 28rpx rgba(31, 41, 55, 0.06);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.course-name {
+  color: #1f2937;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.course-no {
+  margin-top: 10rpx;
+  color: #9ca3af;
+  font-size: 23rpx;
+}
+
+.type-tag {
+  padding: 9rpx 16rpx;
+  color: #2563eb;
+  background-color: #eff6ff;
+  border-radius: 22rpx;
+  font-size: 22rpx;
+}
+
+.teacher-row {
+  display: flex;
+  align-items: center;
+  margin-top: 24rpx;
+}
+
+.teacher-name {
+  color: #374151;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.teacher-title {
+  margin-left: 15rpx;
+  padding: 5rpx 12rpx;
+  color: #059669;
+  background-color: #ecfdf5;
+  border-radius: 16rpx;
+  font-size: 20rpx;
+}
+
+.course-info {
+  display: flex;
+  margin-top: 26rpx;
+  padding: 22rpx 0;
+  background-color: #f8fafc;
+  border-radius: 16rpx;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  width: 33.33%;
+  flex-direction: column;
+}
+
+.info-label {
+  color: #9ca3af;
+  font-size: 21rpx;
+}
+
+.info-value,
+.score {
+  margin-top: 8rpx;
+  color: #374151;
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.score {
+  color: #f59e0b;
+}
+
+.description {
+  margin-top: 24rpx;
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 25rpx;
+}
+
+.capacity-row {
+  margin-top: 25rpx;
+}
+
+.capacity-text {
+  display: flex;
+  justify-content: space-between;
+  color: #6b7280;
+  font-size: 23rpx;
+}
+
+.remaining {
+  color: #16a34a;
+}
+
+.full {
+  color: #dc2626;
+}
+
+.progress {
+  height: 12rpx;
+  margin-top: 14rpx;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  border-radius: 10rpx;
+}
+
+.progress-inner {
+  height: 100%;
+  max-width: 100%;
+  background-color: #2563eb;
+  border-radius: 10rpx;
+}
+
+.select-button,
+.selected-button,
+.disabled-button {
+  margin-top: 28rpx;
+  border-radius: 45rpx;
+  font-size: 28rpx;
+}
+
+.select-button {
+  color: #ffffff;
+  background-color: #2563eb;
+}
+
+.selected-button {
+  color: #16a34a;
+  background-color: #ecfdf5;
+}
+
+.disabled-button {
+  color: #9ca3af;
+  background-color: #f3f4f6;
+}
+
+.select-button::after,
+.selected-button::after,
+.disabled-button::after {
+  border: none;
+}

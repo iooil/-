@@ -1,0 +1,69 @@
+page{
+
+  background:#f5f7fa;
+
+}
+
+.page{
+
+  padding:60rpx;
+
+}
+
+.header{
+
+  text-align:center;
+
+}
+
+.title{
+
+  font-size:48rpx;
+
+  font-weight:bold;
+
+}
+
+.sub{
+
+  color:#999;
+
+  display:block;
+
+  margin-top:20rpx;
+
+}
+
+.logo{
+
+  width:220rpx;
+
+  height:220rpx;
+
+  display:block;
+
+  margin:80rpx auto;
+
+}
+
+.btn{
+
+  background:#3b82f6;
+
+  color:white;
+
+  border-radius:50rpx;
+
+}
+
+.result{
+
+  margin-top:60rpx;
+
+  text-align:center;
+
+  color:#16a34a;
+
+  font-size:32rpx;
+
+}

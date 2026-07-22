@@ -1,0 +1,163 @@
+page {
+  background-color: #f4f7fb;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 35rpx;
+  box-sizing: border-box;
+}
+
+.user-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 40rpx;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  border-radius: 28rpx;
+  box-shadow: 0 16rpx 38rpx rgba(37, 99, 235, 0.25);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110rpx;
+  height: 110rpx;
+  margin-right: 28rpx;
+  color: #2563eb;
+  font-size: 46rpx;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.user-name {
+  margin-bottom: 12rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.user-detail {
+  margin-top: 6rpx;
+  font-size: 25rpx;
+  opacity: 0.9;
+}
+
+.role-tag {
+  position: absolute;
+  top: 28rpx;
+  right: 28rpx;
+  padding: 8rpx 18rpx;
+  font-size: 22rpx;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30rpx;
+}
+
+.section-title {
+  margin: 45rpx 0 24rpx;
+  color: #1f2937;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  width: 31%;
+  padding: 28rpx 8rpx;
+  background-color: #ffffff;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.stat-number {
+  color: #2563eb;
+  font-size: 42rpx;
+  font-weight: bold;
+}
+
+.stat-name {
+  margin-top: 10rpx;
+  color: #6b7280;
+  font-size: 23rpx;
+}
+
+.function-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+}
+
+.function-card {
+  display: flex;
+  padding: 30rpx;
+  background-color: #ffffff;
+  border-radius: 22rpx;
+  flex-direction: column;
+}
+
+.function-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70rpx;
+  height: 70rpx;
+  color: #ffffff;
+  font-size: 30rpx;
+  font-weight: bold;
+  border-radius: 20rpx;
+}
+
+.blue {
+  background-color: #2563eb;
+}
+
+.green {
+  background-color: #16a34a;
+}
+
+.orange {
+  background-color: #f59e0b;
+}
+
+.purple {
+  background-color: #7c3aed;
+}
+
+.function-name {
+  margin-top: 22rpx;
+  color: #1f2937;
+  font-size: 29rpx;
+  font-weight: bold;
+}
+
+.function-desc {
+  margin-top: 10rpx;
+  color: #9ca3af;
+  font-size: 23rpx;
+}
+
+.logout-btn {
+  margin-top: 55rpx;
+  color: #dc2626;
+  background-color: #ffffff;
+  border-radius: 50rpx;
+}
+
+.logout-btn::after {
+  border: none;
+}

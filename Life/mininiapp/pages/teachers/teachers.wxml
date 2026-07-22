@@ -1,0 +1,145 @@
+<view class="page">
+  <view class="search-section">
+    <view class="search-box">
+      <input
+        class="search-input"
+        placeholder="搜索教师姓名或教师编号"
+        value="{{keyword}}"
+        bindinput="onKeywordInput"
+        confirm-type="search"
+        bindconfirm="handleSearch"
+      />
+
+      <view
+        wx:if="{{keyword}}"
+        class="clear-button"
+        bindtap="handleClear"
+      >
+        清除
+      </view>
+
+      <button
+        class="search-button"
+        bindtap="handleSearch"
+      >
+        搜索
+      </button>
+    </view>
+
+    <picker
+      mode="selector"
+      range="{{colleges}}"
+      value="{{collegeIndex}}"
+      bindchange="onCollegeChange"
+    >
+      <view class="filter-content">
+        <text>{{colleges[collegeIndex]}}</text>
+        <text class="arrow">▼</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="summary">
+    <text>共找到{{teachers.length}}位教师</text>
+    <text class="refresh-tip">下拉可刷新</text>
+  </view>
+
+  <view
+    wx:if="{{loading}}"
+    class="loading"
+  >
+    正在加载教师信息……
+  </view>
+
+  <view
+    wx:elif="{{teachers.length === 0}}"
+    class="empty"
+  >
+    <view class="empty-icon">师</view>
+    <text class="empty-title">
+      暂无符合条件的教师
+    </text>
+    <text class="empty-desc">
+      请尝试更换搜索词或学院
+    </text>
+  </view>
+
+  <view
+    wx:else
+    class="teacher-list"
+  >
+    <view
+      wx:for="{{teachers}}"
+      wx:key="id"
+      class="teacher-card"
+      data-id="{{item.id}}"
+      bindtap="goTeacherDetail"
+    >
+      <view class="teacher-top">
+        <view class="avatar">
+          {{item.name_first}}
+        </view>
+
+        <view class="teacher-main">
+          <view class="name-row">
+            <text class="teacher-name">
+              {{item.name}}
+            </text>
+
+            <text
+              wx:if="{{item.title}}"
+              class="title-tag"
+            >
+              {{item.title}}
+            </text>
+          </view>
+
+          <text class="teacher-no">
+            教师编号：{{item.teacher_no}}
+          </text>
+
+          <text class="college">
+            {{item.college}}
+          </text>
+        </view>
+
+        <text class="detail-arrow">›</text>
+      </view>
+
+      <view class="statistics">
+        <view class="stat-item">
+          <text class="stat-value score">
+            {{item.score_text}}
+          </text>
+          <text class="stat-label">综合评分</text>
+        </view>
+
+        <view class="divider"></view>
+
+        <view class="stat-item">
+          <text class="stat-value">
+            {{item.review_text}}
+          </text>
+          <text class="stat-label">教师评价</text>
+        </view>
+
+        <view class="divider"></view>
+
+        <view class="stat-item">
+          <text class="stat-value">
+            {{item.course_text}}
+          </text>
+          <text class="stat-label">授课数量</text>
+        </view>
+      </view>
+
+      <view class="introduction">
+        <text class="intro-label">教师简介</text>
+
+        <text class="intro-content">
+          {{item.introduction || '暂无教师简介'}}
+        </text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,97 @@
+page{
+
+  background:#f5f7fb;
+  
+  }
+  
+  
+  .page{
+  
+  padding:30rpx;
+  
+  }
+  
+  
+  .empty{
+  
+  padding-top:300rpx;
+  
+  text-align:center;
+  
+  color:#999;
+  
+  }
+  
+  
+  .course-card{
+  
+  
+  margin-bottom:25rpx;
+  
+  padding:35rpx;
+  
+  
+  background:white;
+  
+  border-radius:25rpx;
+  
+  
+  display:flex;
+  
+  flex-direction:column;
+  
+  }
+  
+  
+  
+  .top{
+  
+  display:flex;
+  
+  justify-content:space-between;
+  
+  margin-bottom:20rpx;
+  
+  }
+  
+  
+  
+  .name{
+  
+  font-size:36rpx;
+  
+  font-weight:bold;
+  
+  }
+  
+  
+  
+  .credit{
+  
+  color:#2563eb;
+  
+  }
+  
+  
+  
+  .course-card text{
+  
+  margin-top:12rpx;
+  
+  color:#666;
+  
+  }
+  
+  
+  
+  .buttons{
+  
+  
+  display:flex;
+  
+  justify-content:flex-end;
+  
+  margin-top:25rpx;
+  
+  
+  }

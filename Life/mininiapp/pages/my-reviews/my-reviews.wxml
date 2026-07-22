@@ -1,0 +1,84 @@
+<view class="page">
+
+
+<view class="title">
+
+课程评价
+
+</view>
+
+
+
+<view
+wx:for="{{courseReviews}}"
+wx:key="id"
+class="card"
+>
+
+
+<text class="name">
+
+{{item.course_name}}
+
+</text>
+
+
+<text class="score">
+
+⭐{{item.score}}
+
+</text>
+
+
+<text>
+
+{{item.content}}
+
+</text>
+
+
+</view>
+
+
+
+
+<view class="title">
+
+教师评价
+
+</view>
+
+
+
+<view
+wx:for="{{teacherReviews}}"
+wx:key="id"
+class="card"
+>
+
+
+<text class="name">
+
+{{item.teacher_name}}
+
+</text>
+
+
+<text class="score">
+
+⭐{{item.score}}
+
+</text>
+
+
+<text>
+
+{{item.content}}
+
+</text>
+
+
+</view>
+
+
+</view>
